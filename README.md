@@ -2,7 +2,6 @@
 
 A convolutional neural network built in **PyTorch** to classify images from the [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html) dataset into 10 categories. The project explores how **learning rate, batch size, dropout, network depth, L2 regularization, and early-stopping patience** affect model performance, through a series of controlled hyperparameter experiments.
 
-> Machine Learning II — Assignment 5 · Mia Mac
 
 ---
 
@@ -99,35 +98,3 @@ Each experiment changes one hyperparameter from the baseline (`LR=0.001, batch=1
 - **Depth:** Depth matters most. The 3-block model beats the 2-block model by about 5 points. L2 regularization added nothing, which suggests the model wasn't significantly overfitting.
 - **Patience:** Validation loss can plateau temporarily before improving again, so a longer patience (15) let the model find a better solution.
 
-## Getting Started
-
-### Requirements
-- Python 3.8+
-- PyTorch & torchvision
-- NumPy
-- Matplotlib
-
-```bash
-pip install torch torchvision numpy matplotlib
-```
-
-### Running the Notebook
-```bash
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
-jupyter notebook ML_II_Mia_Mac_Assignment_5.ipynb
-```
-
-The CIFAR-10 dataset (~170 MB) downloads automatically to `./data` on the first run.
-
-> **Note:** A GPU is strongly recommended. The experiments were run on Google Colab with a **T4 GPU**. The full suite of 15 training runs will be very slow on a CPU.
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/<your-username>/<repo-name>/blob/main/ML_II_Mia_Mac_Assignment_5.ipynb)
-
-## Built With
-- [PyTorch](https://pytorch.org/)
-- [torchvision](https://pytorch.org/vision/)
-- [NumPy](https://numpy.org/) · [Matplotlib](https://matplotlib.org/)
-
-## Author
-**Mia Mac**
